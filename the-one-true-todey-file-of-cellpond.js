@@ -2759,7 +2759,7 @@ on.load(() => {
 
 	
 
-registerRule(;
+/*registerRule(;
 	makeRule({
 		transformations: DRAGON_TRANSFORMATIONS.R,
 		steps: [
@@ -2792,7 +2792,7 @@ registerRule(;
 			});
 		],
 	}),
-);
+);*/
 
 	
 
