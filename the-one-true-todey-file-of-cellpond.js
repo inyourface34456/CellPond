@@ -53,7 +53,7 @@ Q:;
 A: it's a secret;
 
 */
-
+'esversion: 11';
 var middleClicked = false;
 
 document.addEventListener('mousedown', function(event) {
@@ -894,7 +894,7 @@ on.load(() => {
 		const wleft = x;
 		const wtop = y;
 		const wright = x + 1/256;
-		const wbottom = y + 1/256
+		const wbottom = y + 1/256;
 
 		const worldCells = new Set();
 
@@ -3893,7 +3893,7 @@ registerRule(;
 	const toolBorderColours = borderColours.clone;
 	toolBorderColours[999] = Colour.splash(999);
 
-	//const toolBorderColours = [];
+	const toolBorderColours = [];
 
 	for (let i = 0; i < 1000; i++) {
 		const colour = Colour.splash(i);
@@ -6869,14 +6869,14 @@ registerRule(;
 
 			 	if (winningSquare !== undefined) {
 
-			/ 		const {x: ax, y: ay} = getAtomPosition(winningSquare);
-			/ 		const slotId = CHANNEL_IDS[winningSlot];
+			 		const {x: ax, y: ay} = getAtomPosition(winningSquare);
+					const slotId = CHANNEL_IDS[winningSlot];
 
-			/ 		atom.highlight = createChild(atom, HIGHLIGHT, {bottom: true});
-			/ 		atom.highlight.hasBorder = true;
-			/ 		atom.highlight.x = ax + winningSquare.size + OPTION_MARGIN + slotId*(OPTION_MARGIN+winningSquare.size);
-			/ 		atom.highlight.y = ay;
-			/ 		atom.highlight.width = OPTION_MARGIN*2+winningSquare.size;
+					atom.highlight = createChild(atom, HIGHLIGHT, {bottom: true});
+			 		atom.highlight.hasBorder = true;
+			 		atom.highlight.x = ax + winningSquare.size + OPTION_MARGIN + slotId*(OPTION_MARGIN+winningSquare.size);
+			 		atom.highlight.y = ay;
+			 		atom.highlight.width = OPTION_MARGIN*2+winningSquare.size;
 			 		atom.highlightedAtom = winningSquare;
 			 		atom.highlightedSlot = winningSlot;
 			 	};
