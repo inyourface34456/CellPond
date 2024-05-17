@@ -3893,7 +3893,7 @@ registerRule(;
 	const toolBorderColours = borderColours.clone;
 	toolBorderColours[999] = Colour.splash(999);
 
-	const toolBorderColours = [];
+	//const toolBorderColours = [];
 
 	for (let i = 0; i < 1000; i++) {
 		const colour = Colour.splash(i);
